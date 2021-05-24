@@ -1,0 +1,14 @@
+<h2>You can contact us here: 123124124</h2>
+
+<form action="/contact" method="get">
+  <input type="text" name="query" placeholder="Who are you looking for?" value=<%= params[:query] %>>
+  <input type="text" name="first_name" placeholder="Who are you looking for?">
+  <input type="text" name="last_name" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @members.each do |name| %>
+    <li><%= name %></li>
+  <% end %>
+</ul>
